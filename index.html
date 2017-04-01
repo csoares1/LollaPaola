@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lolla Paola Decorações</title>
+    <link href='css/oxygen.css' rel='stylesheet' type='text/css'>
+    <link href='css/lora.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/decora.css">
+    <link rel="stylesheet" href="css/common.css">
+    <!-- Font awesome css file-->
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- start: Favicon and Touch Icons -->
+     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/Content/apple-touch-icon-144-precomposed.png")" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/Content/apple-touch-icon-114-precomposed.png")" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/Content/apple-touch-icon-72-precomposed.png")" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/Content/apple-touch-icon-57-precomposed.png")" />
+    <link rel="shortcut icon" href="images/Content/favicon.png" />
+
+  </head>
+  <body ng-app="decora" ng-strict-di>
+
+    <!-- Fixed position loading indicator -->
+    <loading class="loading-indicator"></loading>
+
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="index.html" class="pull-left visible-md visible-lg">
+              <div id="logo-img" alt="Logo image"></div>
+            </a>
+
+            <div class="navbar-brand">
+              <a href="index.html"><h1>Lolla Paola</h1></a>
+              <p>
+              <img src="images/star-k-logo.png" alt="Kosher certification">
+              <span>Decoração Provençal</span>
+              </p>
+            </div>
+
+            <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li id="navHomeButton" class="visible-xs">
+                <a href="index.html">
+                  <span class="glyphicon glyphicon-home"></span> Início</a>
+              </li>
+              <li>
+                <a ui-sref="public.myinfo">
+                  <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">Sobre Nós</a>
+              </li>
+              <li id="navMenuButton" ui-sref-active="active">
+                <a ui-sref="public.menu">
+                  <span class="glyphicon glyphicon-gift"></span><br class="hidden-xs"> Temas</a>
+              </li>
+              <li>
+                <a ui-sref="public.util">
+                  <span class="glyphicon glyphicon-blackboard"></span><br class="hidden-xs">Utilitários</a>
+              </li>
+              <li>
+                <a ui-sref="public.contact">
+                  <span class="glyphicon glyphicon-calendar"></span><br class="hidden-xs">Contato</a>
+              </li>
+              <li id="phone" class="hidden-xs">
+                <a href="tel:(11) 4385-6553">
+                  <span>(11) 4385-6553 </span></a><div></div>
+              </li>
+            </ul><!-- #nav-list -->
+          </div><!-- .collapse .navbar-collapse -->
+        </div><!-- .container -->
+      </nav><!-- #header-nav -->
+    </header>
+
+    <div id="call-btn" class="visible-xs">
+      <a class="btn" href="tel:(11) 4385-6553">
+      <span class="glyphicon glyphicon-earphone"></span>
+      (11) 4385-6553
+      </a>
+   </div>
+   <ui-view>
+      <div class="text-center initial-loading">
+        <h2>Loading Site...</h2>
+      </div>
+    </ui-view>
+
+    <footer class="panel-footer">
+      <div class="container">
+        <div class="row">
+          <section id="hours" class="col-sm-4">
+            <span>Horário de Atendimento:</span><br>
+              Com horário agendado<br>
+            <hr class="visible-xs">
+          </section>
+          <section id="address" class="col-sm-4">
+            <span>Contatos:</span><br>
+            <span class="fa fa-phone"> (11) 4385-6553</span><br>
+            <span class="fa fa-whatsapp"> (11)9 9290-0708</span><br>
+            <span class="fa fa-envelope-o"><a href="mailto:contato@lollapaoladecora.com"> contato@lollapaoladecora.com</a></span><br>
+            <spna class="fa fa-facebook"><a href="https://pt-br.facebook.com/lollapaoladecora/" target="_blank"> Facebook Lolla Paola</a></span><br>
+            <hr class="visible-xs">
+          </section>
+          <section id="testimonials" class="col-sm-4">
+            <p>"Profissionalismo, qualidade e preço andam juntos com esse profissional!!! Tudo ficou !!lindo amei.."</p>
+            <p>"Erika muito obrigada pela atenção e dedicação ficou tudo lindo e perfeito... amei trabalho maravilhoso...indico sem medo...bjinhos"</p>
+
+          </section>
+        </div>
+        <div class="text-center">
+          &copy; Copyright Lolla Paola 2017
+        </div>
+      </div>
+    </footer>
+
+    <!-- Libs -->
+    <script src="lib/jquery-2.1.4.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- Main Restaurant Module -->
+    <script src="src/decora.module.js"></script>
+
+    <!-- Common Module -->
+    <script src="src/common/common.module.js"></script>
+    <script src="src/common/loading/loading.component.js"></script>
+    <script src="src/common/loading/loading.interceptor.js"></script>
+    <script src="src/common/menu.service.js"></script>
+    <script src="src/common/contact.service.js"></script>
+    <script src="src/common/current-user.service.js"></script>
+    <script src="src/common/util.service.js"></script>
+    <!-- Public Module -->
+    <script src="src/public/public.module.js"></script>
+    <script src="src/public/public.routes.js"></script>
+    <script src="src/public/menu/menu.controller.js"></script>
+    <script src="src/public/menu-category/menu-category.component.js"></script>
+    <script src="src/public/menu-items/menu-items.controller.js"></script>
+    <script src="src/public/menu-item/menu-item.component.js"></script>
+    <script src="src/public/contact/contact.controller.js"></script>
+    <script src="src/public/util/util.controller.js"></script>
+
+
+    <!-- ADMIN SITE -->
+
+    <!--Application files -->
+
+  </body>
+
+</html>

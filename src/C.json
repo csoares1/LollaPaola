@@ -1,0 +1,31 @@
+
+  {
+    "menu_items": [
+
+        {
+          "id": 1,
+          "short_name": "C1",
+          "name": "Mini-Wedding",
+          "description": "Muro inglês,bolo fake, mesa grande, vasos, bandejas para doce, conjunto de letras, armário para lembrancinhas e apoaidores laterais",
+          "price_small": null,
+          "price_large": null,
+          "image_present": true
+        },
+        {
+          "id": 1,
+          "short_name": "C2",
+          "name": "Noivado",
+          "description": "Muro de bexigas,bolo fake, mesa grande, vasos, bandejas para doce, conjunto de letras, armário para lembrancinhas e apoaidores laterais",
+          "price_small": null,
+          "price_large": null,
+          "image_present": true
+        }
+      ],
+      "category": {
+        "id": 83,
+       "short_name":"C",
+        "name":"Casamento",
+        "special_instructions":"",
+        "url":"http://carlareginasouzasoares.atspace.cc/categories/83.json"
+      }
+    }

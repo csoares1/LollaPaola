@@ -1,0 +1,27 @@
+
+[
+      {
+      "id": 81,
+     "short_name":"A",
+      "name":"Festa de Aniversário Adulto",
+      "special_instructions":""
+     },
+    {
+      "id": 82,
+     "short_name":"B",
+      "name":"Batizado",
+      "special_instructions":""
+     },
+    {
+      "id": 83,
+     "short_name":"C",
+      "name":"Casamento",
+      "special_instructions":""
+    },
+    {
+      "id": 84,
+     "short_name":"I",
+      "name":"Festa de Aniversário Infantil",
+      "special_instructions":""
+     }
+  ]

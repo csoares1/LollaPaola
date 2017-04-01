@@ -1,0 +1,48 @@
+
+
+  {
+    "menu_items": [
+      {
+        "id": 1,
+        "short_name": "B1",
+        "name": "Batizado",
+        "description": "Porta retrato,bolo fake, mesa grande alta, mesa média baixa , vasos, bandejas para doce, conjunto de letras e dois armários para lembrancinhas",
+        "price_small": null,
+        "price_large": null,
+        "image_present": true
+      },
+      {
+        "id": 2,
+        "short_name": "B2",
+        "name": "Chá de bebê(menino)",
+        "description": "Muro inglês, bexigas,bolo fake de fraldas, mesa grande alta, mesa média baixa , vasos, bandejas para doce, conjunto de letras, lustes, banco, ursos, dois apoaidores laterais e armário para lembrancinhas",
+        "price_small": null,
+        "price_large": null,
+        "image_present": true
+      },
+      {
+        "id": 3,
+        "short_name": "B3",
+        "name": "Chá de bebê(menina)",
+        "description": "Muro inglês, bexigas,bolo fake de fraldas, mesa grande alta, mesa média baixa , vasos, bandejas para doce, conjunto de letras, lustes, banco, ursos, dois apoaidores laterais e armário para lembrancinhas",
+        "price_small": null,
+        "price_large": null,
+        "image_present": true
+      },
+      {
+        "id": 4,
+        "short_name": "B4",
+        "name": "Chá de revelação",
+        "description": "Muro inglês, bexigas,bolo fake, mesa grande, vasos, bandejas para doce, lustes, banco, ursos, dois apoaidores laterais e porta pirulito",
+        "price_small": null,
+        "price_large": null,
+        "image_present": true
+      }
+    ],
+    "category": {
+      "id": 82,
+     "short_name":"B",
+      "name":"Batizado e chás",
+      "special_instructions":""
+     }
+    }

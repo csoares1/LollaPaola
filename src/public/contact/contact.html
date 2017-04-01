@@ -1,0 +1,60 @@
+<div id="main-content-contact" class="container"ng-controller="contactController">
+      <h1 class="text-color">Contato</h1>
+      <div class="alert alert-danger" ng-show="error">
+          <button class="close" data-dismiss="alert">x</button>
+          <center><strong>Erro!</strong> Tente mais tarde!</center>
+      </div>
+      <div class="alert alert-success" ng-show="success">
+          <button class="close" data-dismiss="alert">x</button>
+          <center><strong>Ok! </strong> Sua mensagem foi enviada.</center>
+      </div>
+
+      <form name="FormContato" ng-submit="salveSubmit()">
+
+          <div ng-class="{ 'has-error has-feedback form-group ' : FormContato.name.$invalid, 'form-group has-success has-feedback' :FormContato.name.$valid  }">
+              <label class="control-label">Nome</label>
+              <input name="name" placeholder="Nome" minlength="2" ng-maxlength="30" class="form-control" type="text" ng-model="user.nome" required />
+              <span ng-show="FormContato.name.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+              <span ng-show="FormContato.name.$valid" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+          </div>
+          <div ng-class="{ 'has-error has-feedback form-group ' : FormContato.email.$invalid, 'form-group has-success has-feedback' :FormContato.email.$valid  }">
+              <label class="control-label">E-mail</label>
+              <input name="email" placeholder="E-mail" class="form-control" type="email" ng-model="user.email" required />
+              <span ng-show="FormContato.email.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+              <span ng-show="FormContato.email.$valid" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+          </div>
+        <div ng-class="{ 'has-error has-feedback form-group ' : FormContato.telefone.$invalid, 'form-group has-success has-feedback' :FormContato.telefone.$valid  }">
+              <label class="control-label">Telefone</label>
+              <input name="telefone" placeholder="Telefone ##-####-####" pattern="(\d{2})-(\d{4})-(\d{4})" class="form-control" type="tel" ng-model="user.telefone" required />
+              <span ng-show="FormContato.telefone.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+              <span ng-show="FormContato.telefone.$valid" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+          </div>
+          <div ng-class="{ 'has-error has-feedback form-group ' : FormContato.local.$invalid, 'form-group has-success has-feedback' :FormContato.local.$valid  }">
+              <label class="control-label">Cidade/Bairro</label>
+              <input name="local" placeholder="Cidade/Bairro"  minlength="2" ng-maxlength="30" class="form-control" type="text" ng-model="user.local" required />
+              <span ng-show="FormContato.local.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+              <span ng-show="FormContato.local.$valid" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+          </di>
+          <div ng-class="{ 'has-error has-feedback form-group ' : FormContato.data.$invalid, 'form-group has-success has-feedback' :FormContato.data.$valid  }">
+              <label class="control-label">Data do Evento</label>
+              <input name="data" placeholder="Data do Evento"  class="form-control" type="date" ng-model="user.data" required />
+              <span ng-show="FormContato.data.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+              <span ng-show="FormContato.data.$valid" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+          </di>
+          <div ng-class="{ 'has-error has-feedback form-group ' : FormContato.qtdPessoas.$invalid, 'form-group has-success has-feedback' :FormContato.qtdPessoas.$valid  }">
+              <label class="control-label">Quantidade de Convidados</label>
+              <input name="qtdPessoas" placeholder="Quantidade de convidados" class="form-control" type="number" ng-model="user.qtdPessoas" required />
+              <span ng-show="FormContato.qtdPessoas.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+              <span ng-show="FormContato.qtdPessoas.$valid" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+          </di>
+          <div ng-class="{ 'has-error has-feedback form-group ' : FormContato.mensagem.$invalid, 'form-group has-success has-feedback' :FormContato.mensagem.$valid  }">
+              <label class="control-label">Mensagem</label>
+              <textarea name="mensagem" placeholder="Mensagem" class="form-control" minlength="2" ng-maxlength="300" ng-model="user.mensagem" required ></textarea>
+              <span ng-show="FormContato.mensagem.$invalid" class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+              <span ng-show="FormContato.mensagem.$valid" class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+          </div><br>
+          <input type="submit" class="btn btn-lg" value="Enviar mensagem" ng-class="{'disabled btn-warning' : FormContato.$invalid , 'btn-success' : FormContato.$valid}">
+
+        </form>
+      </div>
+    </div>

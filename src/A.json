@@ -1,0 +1,38 @@
+
+  {
+    "menu_items": [
+       {
+          "id": 1,
+          "short_name": "A1",
+          "name": "Festa Música",
+          "description": "Painel de bexigas coloridas, Guitarra ao fundo, bolo fake, mesa central, mesas pequenas laterais, vasos, lustre e bandejas para doce",
+          "price_small": null,
+          "price_large": null,
+          "image_present": true
+        },
+        {
+           "id": 2,
+           "short_name": "A2",
+           "name": "Festa Time",
+           "description": "Painel de bexigas com cores de acordo com o time,personagens do time, bandeira do time, bolo fake, mesa central, mesas pequenas laterais, vasos, lustre e bandejas para doce",
+           "price_small": null,
+           "price_large": null,
+           "image_present": true
+         },
+         {
+            "id": 3,
+            "short_name": "A3",
+            "name": "Festa Melhor Idade",
+            "description": "Muro inglês,painel de bexiga,bolo fake, mesa central, mesas pequenas laterais, vasos, lustre, bandejas para doce e armário para lembrancinhas",
+            "price_small": null,
+            "price_large": null,
+            "image_present": true
+          }
+    ],
+    "category": {
+      "id": 81,
+     "short_name":"A",
+      "name":"Festa de Aniversário Adulto",
+      "special_instructions":""
+    }
+  }
