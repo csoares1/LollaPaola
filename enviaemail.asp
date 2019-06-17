@@ -25,7 +25,7 @@ Mail.Configuration.Fields.Item ("http://schemas.microsoft.com/cdo/configuration/
 Mail.Configuration.Fields.Item ("http://schemas.microsoft.com/cdo/configuration/smtpconnectiontimeout") = 60
 
 Mail.Configuration.Fields.Item ("http://schemas.microsoft.com/cdo/configuration/smtpauthenticate") = 1
-Mail.Configuration.Fields.Item ("http://schemas.microsoft.com/cdo/configuration/sendusername") ="orcamentolollapaoladecora@gmail.com"
+Mail.Configuration.Fields.Item ("http://schemas.microsoft.com/cdo/configuration/sendusername") ="email@gmail.com"
 Mail.Configuration.Fields.Item ("http://schemas.microsoft.com/cdo/configuration/sendpassword") ="Loll@0404"
 
 Mail.Configuration.Fields.Update
